@@ -42,3 +42,10 @@ body {
     content: '.';
   }
 }
+
+.site-footer {
+  padding: 20px 0;
+  margin: 20px;
+  border-top: 1px dashed $lightGray;
+  text-align: center;
+}

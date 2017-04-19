@@ -36,6 +36,13 @@
   }
 }
 
+.post-navigation {
+  text-align: center;
+  @include respond-to(medium) {
+    text-align: left;
+  }
+}
+
 .image {
   flex: 0 1 auto;
   margin-bottom: 0;
