@@ -5,4 +5,3 @@ date:   2017-03-06 08:41:54 +0100
 categories: typography
 image: /assets/images/type2.png
 ---
-This is a description

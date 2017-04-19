@@ -6,7 +6,7 @@
 
 	var $wrap = $( "#wrap" );
 
-	$('nav').on( "click", ".menu__item", function( event ) {
+	$('nav, .post-list').on( "click", ".menu__item", function( event ) {
 
 		event.preventDefault();
     $("#toggle").attr('checked', false);
@@ -64,8 +64,8 @@
 } )( jQuery, window.History );
 
 $(document).ready(function() {
-  if ( $('#shop').length ) {
-    $('.shop-items li').each(function(t) {
+  if ( $('.post-list').length ) {
+    $('.post-list li').each(function(t) {
         var e = $(this);
         setTimeout(function() {
             e.addClass('in');

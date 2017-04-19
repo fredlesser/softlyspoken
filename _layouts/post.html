@@ -11,9 +11,11 @@ layout: default
         </span>{% endif %}
       </span>
     </div>
-    <div class="col post-description">
-      {{ content }}
-    </div>
+    {% if content %}
+      <div class="col post-description">
+        {{ content }}
+      </div>
+    {% endif %}
     <div class="post-navigation">
       {% if page.previous.url %}
         <a class="prev" href="{{page.previous.url}}">&laquo; Previous</a>

@@ -6,7 +6,7 @@ body {
   
   &.zoomed,
   &.zoomed #wrap {
-    overflow: hidden;
+    
   }
   
   &.zoomed .section {
@@ -19,7 +19,6 @@ body {
 }
 
 .site-header {
-  // background: $black;
   display: flex;
   align-items: center;
   position: relative;

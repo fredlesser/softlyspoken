@@ -3,16 +3,14 @@ layout: default
 ---
 
   
-  {{ content }}
+  <section class="intro">
+    {{ content }}
+  </section>
 
-  <!-- <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+  <section class="post-list">
+    {% for post in site.posts %}  
+      <a href="{{ post.url | relative_url }}" class="post-image menu__item" style="background-image: url({{ post.image }})">
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+      </a>
     {% endfor %}
-  </ul> -->
+  </section>
